@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" class="dark scroll-smooth">
+<html lang="es" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -51,11 +51,19 @@
     </script>
     <style type="text/tailwindcss">
         @layer base {
+            html,
+            body {
+                overscroll-behavior-y: none;
+                overscroll-behavior-x: none;
+                -webkit-overflow-scrolling: touch;
+            }
+
             body {
                 @apply bg-void text-slate-200 overflow-x-hidden antialiased selection:bg-cyber-purple/30;
                 font-family: 'Plus Jakarta Sans', sans-serif;
                 text-rendering: optimizeLegibility;
                 -webkit-font-smoothing: antialiased;
+                min-height: 100svh;
             }
         }
 
@@ -168,6 +176,16 @@
         .stagger-2 { transition-delay: 200ms; }
         .stagger-3 { transition-delay: 300ms; }
         .stagger-4 { transition-delay: 400ms; }
+
+        @media (max-width: 768px) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .mesh-gradient {
+                animation: none;
+            }
+        }
 
         @media (prefers-reduced-motion: reduce) {
             html {
