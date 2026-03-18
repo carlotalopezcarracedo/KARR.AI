@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <img
-                src={`${import.meta.env.BASE_URL}LOGO_ISOLOGO HORIZONTAL BLANCO.png`}
+                src={`${import.meta.env.BASE_URL}logos KAIRAS_ISOLOGO HORIZONTAL BLANCO.png`}
                 alt="Carlota AI"
                 className="h-8 w-auto cursor-pointer"
               />
