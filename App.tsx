@@ -34,7 +34,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-[100svh] overflow-x-hidden">
+    <div className="relative min-h-[100svh]">
       {/* Background Effects */}
       <div className="fixed inset-0 grainy-overlay z-50 pointer-events-none"></div>
       <div className="fixed inset-0 mesh-gradient -z-10 transition-opacity duration-1000"></div>
