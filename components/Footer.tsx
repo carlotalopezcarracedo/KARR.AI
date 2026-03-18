@@ -39,8 +39,18 @@ const Footer: React.FC = () => {
             </div>
             <div className="space-y-4">
               <span className="text-[10px] font-bold uppercase tracking-widest text-white/40 block">Legal</span>
-              <a className="block text-xs font-bold hover:text-cyber-purple transition-colors" href="#">Privacidad</a>
-              <a className="block text-xs font-bold hover:text-cyber-purple transition-colors" href="#">Aviso Legal</a>
+              <a
+                className="block text-xs font-bold hover:text-cyber-purple transition-colors"
+                href={`${import.meta.env.BASE_URL}privacidad.html`}
+              >
+                Privacidad
+              </a>
+              <a
+                className="block text-xs font-bold hover:text-cyber-purple transition-colors"
+                href={`${import.meta.env.BASE_URL}aviso-legal.html`}
+              >
+                Aviso Legal
+              </a>
             </div>
           </div>
         </div>
