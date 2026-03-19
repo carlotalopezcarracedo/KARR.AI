@@ -51,6 +51,18 @@ const Footer: React.FC = () => {
               >
                 Aviso Legal
               </a>
+              <a
+                className="block text-xs font-bold hover:text-cyber-purple transition-colors"
+                href={`${import.meta.env.BASE_URL}cookies.html`}
+              >
+                Cookies
+              </a>
+              <a
+                className="block text-xs font-bold hover:text-cyber-purple transition-colors"
+                href={`${import.meta.env.BASE_URL}accesibilidad.html`}
+              >
+                Accesibilidad
+              </a>
             </div>
           </div>
         </div>
