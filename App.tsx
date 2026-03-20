@@ -11,7 +11,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const CONTACT_EMAIL = 'carlotaloopezcarracedo@gmail.com';
+const CONTACT_EMAIL = 'carlota.kairas@gmail.com';
 
 const App: React.FC = () => {
   useEffect(() => {
