@@ -15,6 +15,16 @@ const CONTACT_EMAIL = 'carlota.kairas@gmail.com';
 
 const App: React.FC = () => {
   useEffect(() => {
+    const hiddenElements = document.querySelectorAll('.reveal, .reveal-scale');
+    const isMobileViewport = window.matchMedia('(max-width: 768px)').matches;
+    const isCoarsePointer = window.matchMedia('(pointer: coarse)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (isMobileViewport || isCoarsePointer || prefersReducedMotion) {
+      hiddenElements.forEach((el) => el.classList.add('active'));
+      return;
+    }
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -27,7 +37,6 @@ const App: React.FC = () => {
       rootMargin: "0px 0px -50px 0px"
     });
 
-    const hiddenElements = document.querySelectorAll('.reveal, .reveal-scale');
     hiddenElements.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -36,7 +45,7 @@ const App: React.FC = () => {
   return (
     <div className="relative min-h-[100svh]">
       {/* Background Effects */}
-      <div className="fixed inset-0 grainy-overlay z-50 pointer-events-none"></div>
+      <div className="hidden md:block fixed inset-0 grainy-overlay z-50 pointer-events-none"></div>
       <div className="fixed inset-0 mesh-gradient -z-10 transition-opacity duration-1000"></div>
       
       {/* Navigation */}

@@ -58,7 +58,7 @@
         @layer base {
             html,
             body {
-                overscroll-behavior-y: none;
+                overscroll-behavior-y: auto;
                 overscroll-behavior-x: none;
                 -webkit-overflow-scrolling: touch;
             }
@@ -77,12 +77,17 @@
         }
 
         .reveal, .reveal-scale {
-            will-change: transform, opacity;
             backface-visibility: hidden;
         }
 
         .mesh-gradient, .grainy-overlay {
             transform: translateZ(0);
+        }
+
+        @media (min-width: 769px) {
+            .reveal, .reveal-scale {
+                will-change: transform, opacity;
+            }
         }
         
         /* Dynamic Background */
@@ -189,6 +194,19 @@
 
             .mesh-gradient {
                 animation: none;
+            }
+
+            .grainy-overlay {
+                display: none;
+            }
+
+            .glass-card {
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+            }
+
+            .glass-card::before {
+                display: none;
             }
         }
 
