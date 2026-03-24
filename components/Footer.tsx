@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 className="block text-xs font-bold hover:text-cyber-purple transition-colors"
-                href="https://www.instagram.com/carlotaloopeez/?hl=es"
+                href="https://www.instagram.com/kairas.ai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
