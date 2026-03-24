@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-4 left-0 right-0 z-[100] px-4 sm:px-6">
       <div className="max-w-[1400px] mx-auto">
-        <div className="glass-card rounded-3xl border-white/20 bg-black/70 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-4 shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
+        <div className="glass-card nav-glass rounded-3xl border-white/20 px-4 sm:px-6 py-3 sm:py-4 shadow-[0_20px_50px_rgba(0,0,0,0.45)]">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <img

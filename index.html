@@ -162,6 +162,13 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
+        .nav-glass {
+            background: linear-gradient(180deg, rgba(8, 8, 12, 0.82) 0%, rgba(5, 5, 5, 0.68) 100%);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-color: rgba(255, 255, 255, 0.12);
+        }
+
         /* Reveal on Scroll Animations */
         .reveal {
             opacity: 0;
@@ -206,6 +213,13 @@
             .glass-card {
                 backdrop-filter: none;
                 -webkit-backdrop-filter: none;
+            }
+
+            .glass-card.nav-glass {
+                background: linear-gradient(180deg, rgba(10, 10, 16, 0.9) 0%, rgba(5, 5, 5, 0.78) 100%);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border-color: rgba(255, 255, 255, 0.14);
             }
 
             .glass-card::before {
