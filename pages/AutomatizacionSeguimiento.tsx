@@ -21,15 +21,15 @@ const AutomatizacionSeguimiento: React.FC = () => {
       <main id="main-content">
 
         {/* Hero */}
-        <section className="min-h-screen px-6 pt-40 pb-24 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-cyber-purple/8 blur-[130px] -z-10 rounded-full" />
+        <section className="min-h-[100svh] px-6 pt-32 pb-20 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-cyber-purple/10 blur-[130px] -z-10 rounded-full" />
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-6">
               <a href="/" className="hover:text-white transition-colors">KAIRAS</a>
               <span className="mx-2 opacity-40">/</span>
               Seguimiento de clientes
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-none mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
               Automatización del seguimiento de clientes para no perder oportunidades
             </h1>
             <p className="text-xl text-slate-400 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
@@ -47,12 +47,12 @@ const AutomatizacionSeguimiento: React.FC = () => {
         </section>
 
         {/* Problem */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">El problema</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   Por qué falla el seguimiento cuando hay volumen
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -69,8 +69,8 @@ const AutomatizacionSeguimiento: React.FC = () => {
                   { title: 'La reactivación de clientes fríos no ocurre', desc: 'Clientes que dejaron de comprar hace meses podrían volver con un mensaje correcto en el momento correcto. Nadie lo hace.' },
                   { title: 'El equipo hace seguimiento de lo urgente, no de lo importante', desc: 'Solo se reactiva quien llama o escribe. Los silenciosos se pierden sin que nadie los haya contactado.' },
                 ].map((item) => (
-                  <div key={item.title} className="glass-card p-6 rounded-2xl border-white/5">
-                    <h3 className="text-sm font-bold uppercase tracking-wider mb-2">{item.title}</h3>
+                  <div key={item.title} className="glass-card p-8 rounded-3xl border-white/10 hover:bg-white/5 transition-all">
+                    <h3 className="text-base font-bold uppercase tracking-wider mb-2">{item.title}</h3>
                     <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
                   </div>
                 ))}
@@ -80,10 +80,10 @@ const AutomatizacionSeguimiento: React.FC = () => {
         </section>
 
         {/* What KAIRAS automates */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Qué automatizamos</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-6 leading-tight max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-6 leading-tight max-w-3xl">
               El ciclo completo de seguimiento sin intervención manual constante
             </h2>
             <p className="text-lg text-slate-400 font-light mb-16 max-w-2xl leading-relaxed">
@@ -98,8 +98,8 @@ const AutomatizacionSeguimiento: React.FC = () => {
                 { title: 'Notificaciones al equipo con contexto', desc: 'Cuando es momento de intervención humana, el equipo recibe una alerta con todo el historial del contacto.' },
                 { title: 'Registro de cada interacción', desc: 'Cada mensaje enviado, abierto o respondido queda registrado. El historial del cliente siempre está completo.' },
               ].map((item) => (
-                <div key={item.title} className="glass-card p-8 rounded-3xl flex flex-col gap-4 hover:bg-white/5 transition-all border-white/5">
-                  <h3 className="text-sm font-bold uppercase tracking-wider">{item.title}</h3>
+                <div key={item.title} className="glass-card p-8 rounded-3xl flex flex-col gap-4 hover:bg-white/5 hover:-translate-y-1 transition-all border-white/10">
+                  <h3 className="text-base font-bold uppercase tracking-wider text-white">{item.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -108,12 +108,12 @@ const AutomatizacionSeguimiento: React.FC = () => {
         </section>
 
         {/* How KAIRAS works */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Cómo lo implementamos</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   Un sistema que trabaja en paralelo a tu equipo
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -131,7 +131,9 @@ const AutomatizacionSeguimiento: React.FC = () => {
                   { n: '04', title: 'Conexión con tu CRM y canales', desc: 'Integramos con las herramientas que ya usas: CRM, email, WhatsApp, calendario.' },
                 ].map((step) => (
                   <div key={step.n} className="flex gap-6 items-start">
-                    <span className="text-[10px] font-mono text-cyber-purple tracking-widest pt-1 w-8 shrink-0">{step.n}</span>
+                    <div className="w-8 h-8 rounded-full border border-cyber-purple/40 bg-cyber-purple/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="text-[9px] font-mono text-cyber-purple tracking-widest">{step.n}</span>
+                    </div>
                     <div>
                       <h3 className="text-base font-bold uppercase tracking-wider mb-2">{step.title}</h3>
                       <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
@@ -144,10 +146,10 @@ const AutomatizacionSeguimiento: React.FC = () => {
         </section>
 
         {/* For whom */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Para quién tiene sentido</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-12 leading-tight max-w-2xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-12 leading-tight max-w-2xl">
               Automatizar el seguimiento funciona cuando...
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -159,7 +161,7 @@ const AutomatizacionSeguimiento: React.FC = () => {
                 'El seguimiento depende de la memoria o los hábitos de cada persona del equipo.',
                 'Quieres saber en qué estado está cada lead sin tener que preguntar al equipo.',
               ].map((text, i) => (
-                <div key={i} className="glass-card p-6 rounded-2xl flex items-start gap-4 border-white/5">
+                <div key={i} className="glass-card p-6 rounded-2xl flex items-start gap-4 border-white/10 hover:bg-white/5 transition-all">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyber-purple mt-2 shrink-0" />
                   <p className="text-sm text-slate-300 leading-relaxed">{text}</p>
                 </div>
@@ -174,7 +176,7 @@ const AutomatizacionSeguimiento: React.FC = () => {
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8">Explora también</p>
             <div className="grid sm:grid-cols-3 gap-4">
               {RELATED.map((page) => (
-                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 transition-all border-white/5">
+                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 hover:bg-white/5 transition-all border-white/10">
                   <span className="text-sm font-bold uppercase tracking-wider">{page.title}</span>
                   <ArrowRight className="w-4 h-4 text-cyber-purple group-hover:translate-x-1 transition-transform shrink-0" />
                 </a>
@@ -186,7 +188,7 @@ const AutomatizacionSeguimiento: React.FC = () => {
         {/* CTA */}
         <section className="py-32 px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
               Ningún cliente se pierde<br />
               <span className="text-cyber-purple italic">por falta de seguimiento.</span>
             </h2>

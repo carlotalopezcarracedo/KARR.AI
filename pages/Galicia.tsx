@@ -21,15 +21,15 @@ const Galicia: React.FC = () => {
       <main id="main-content">
 
         {/* Hero */}
-        <section className="min-h-screen px-6 pt-40 pb-24 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyber-purple/8 blur-[130px] -z-10 rounded-full" />
+        <section className="min-h-[100svh] px-6 pt-32 pb-20 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-cyber-purple/10 blur-[130px] -z-10 rounded-full" />
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-6">
               <a href="/" className="hover:text-white transition-colors">KAIRAS</a>
               <span className="mx-2 opacity-40">/</span>
               Galicia
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-none mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
               Automatización e IA para empresas en Galicia
             </h1>
             <p className="text-xl text-slate-400 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
@@ -47,12 +47,12 @@ const Galicia: React.FC = () => {
         </section>
 
         {/* Local context */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">El contexto local</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   Por qué la automatización importa especialmente en pymes gallegas
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -62,7 +62,7 @@ const Galicia: React.FC = () => {
                   La automatización aquí no es una inversión en tecnología por tendencia. Es una ventaja competitiva real para negocios que necesitan trabajar con más orden, menos carga y mayor consistencia sin crecer proporcionalmente en personal.
                 </p>
               </div>
-              <div className="glass-card p-10 rounded-3xl border-white/5">
+              <div className="glass-card p-10 rounded-3xl border-white/10">
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-6">Lo que diferencia a KAIRAS en Galicia</p>
                 <div className="space-y-6">
                   {[
@@ -83,10 +83,10 @@ const Galicia: React.FC = () => {
         </section>
 
         {/* Sectors */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Sectores prioritarios</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-6 leading-tight max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-6 leading-tight max-w-3xl">
               Los sectores de servicios en Galicia que más se benefician
             </h2>
             <p className="text-lg text-slate-400 font-light mb-16 max-w-2xl leading-relaxed">
@@ -119,7 +119,7 @@ const Galicia: React.FC = () => {
                   desc: 'Autónomos con alta carga administrativa que necesitan orden y automatización sin complejidad técnica ni grandes inversiones.',
                 },
               ].map((item) => (
-                <div key={item.title} className="glass-card p-8 rounded-3xl border-white/5 hover:bg-white/5 transition-all">
+                <div key={item.title} className="glass-card p-8 rounded-3xl border-white/10 hover:bg-white/5 hover:-translate-y-1 transition-all">
                   <h3 className="text-base font-bold uppercase tracking-wider mb-3">{item.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
                 </div>
@@ -129,12 +129,12 @@ const Galicia: React.FC = () => {
         </section>
 
         {/* Presence */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Presencia en Galicia</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   Remoto y presencial en toda la comunidad
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -155,7 +155,7 @@ const Galicia: React.FC = () => {
                   'Lugo',
                   'Toda Galicia',
                 ].map((city) => (
-                  <div key={city} className="glass-card p-5 rounded-2xl border-white/5 text-center">
+                  <div key={city} className="glass-card p-5 rounded-2xl border-white/10 text-center hover:bg-white/5 transition-all">
                     <span className="text-sm font-bold uppercase tracking-wider text-slate-300">{city}</span>
                   </div>
                 ))}
@@ -165,10 +165,10 @@ const Galicia: React.FC = () => {
         </section>
 
         {/* How KAIRAS works */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Cómo trabajamos</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-12 leading-tight max-w-2xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-12 leading-tight max-w-2xl">
               Un diagnóstico para entender tu negocio concreto
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -179,7 +179,9 @@ const Galicia: React.FC = () => {
                 { n: '04', title: 'Implementación y acompañamiento', desc: 'Ponemos en marcha la solución y hacemos seguimiento hasta que funciona de forma autónoma.' },
               ].map((step) => (
                 <div key={step.n} className="flex flex-col gap-4">
-                  <span className="text-[10px] font-mono text-cyber-purple tracking-widest">{step.n}</span>
+                  <div className="w-8 h-8 rounded-full border border-cyber-purple/40 bg-cyber-purple/10 flex items-center justify-center">
+                    <span className="text-[9px] font-mono text-cyber-purple tracking-widest">{step.n}</span>
+                  </div>
                   <h3 className="text-base font-bold uppercase tracking-wider">{step.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
                 </div>
@@ -194,7 +196,7 @@ const Galicia: React.FC = () => {
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8">Explora también</p>
             <div className="grid sm:grid-cols-3 gap-4">
               {RELATED.map((page) => (
-                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 transition-all border-white/5">
+                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 hover:bg-white/5 transition-all border-white/10">
                   <span className="text-sm font-bold uppercase tracking-wider">{page.title}</span>
                   <ArrowRight className="w-4 h-4 text-cyber-purple group-hover:translate-x-1 transition-transform shrink-0" />
                 </a>
@@ -206,7 +208,7 @@ const Galicia: React.FC = () => {
         {/* CTA */}
         <section className="py-32 px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
               Habla conmigo<br />
               <span className="text-cyber-purple italic">sobre tu negocio en Galicia.</span>
             </h2>

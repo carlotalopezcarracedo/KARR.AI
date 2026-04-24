@@ -21,15 +21,15 @@ const IAEmpresas: React.FC = () => {
       <main id="main-content">
 
         {/* Hero */}
-        <section className="min-h-screen px-6 pt-40 pb-24 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-cyber-purple/8 blur-[130px] -z-10 rounded-full" />
+        <section className="min-h-[100svh] px-6 pt-32 pb-20 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-cyber-purple/10 blur-[130px] -z-10 rounded-full" />
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-6">
               <a href="/" className="hover:text-white transition-colors">KAIRAS</a>
               <span className="mx-2 opacity-40">/</span>
               IA para empresas
             </p>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight uppercase leading-none mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase leading-[0.9] mb-8">
               IA para empresas aplicada a procesos reales
             </h1>
             <p className="text-xl text-slate-400 font-light max-w-2xl mx-auto mb-12 leading-relaxed">
@@ -47,12 +47,12 @@ const IAEmpresas: React.FC = () => {
         </section>
 
         {/* Problem */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">El problema</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   Hay demasiada IA que no hace nada útil en tu negocio
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -62,7 +62,7 @@ const IAEmpresas: React.FC = () => {
                   La IA es útil cuando resuelve algo concreto: clasificar un lead, responder una duda frecuente, resumir una reunión, analizar datos que ya tienes. Cuando parte de un problema específico, no de una tecnología.
                 </p>
               </div>
-              <div className="glass-card p-10 rounded-3xl border-white/5">
+              <div className="glass-card p-10 rounded-3xl border-white/10">
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-6">Lo que sí funciona</p>
                 <div className="space-y-6">
                   {[
@@ -83,10 +83,10 @@ const IAEmpresas: React.FC = () => {
         </section>
 
         {/* Concrete applications */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Aplicaciones concretas</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-6 leading-tight max-w-3xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-6 leading-tight max-w-3xl">
               Dónde aplica IA de forma concreta
             </h2>
             <p className="text-lg text-slate-400 font-light mb-16 max-w-2xl leading-relaxed">
@@ -119,8 +119,8 @@ const IAEmpresas: React.FC = () => {
                   desc: 'Borradores de propuestas, respuestas a clientes, actualizaciones de estado. La IA genera la base, el equipo revisa y envía. Menos tiempo de escritura, misma calidad.',
                 },
               ].map((item) => (
-                <div key={item.title} className="glass-card p-8 rounded-3xl border-white/5 hover:bg-white/5 transition-all">
-                  <h3 className="text-base font-bold uppercase tracking-wider mb-4">{item.title}</h3>
+                <div key={item.title} className="glass-card p-8 rounded-3xl border-white/10 hover:bg-white/5 hover:-translate-y-1 transition-all">
+                  <h3 className="text-base font-bold uppercase tracking-wider mb-3">{item.title}</h3>
                   <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -129,12 +129,12 @@ const IAEmpresas: React.FC = () => {
         </section>
 
         {/* How KAIRAS works */}
-        <section className="py-24 px-6">
+        <section className="py-32 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-start">
               <div>
                 <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Cómo trabajamos</p>
-                <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
                   El problema primero.<br />La herramienta después.
                 </h2>
                 <p className="text-lg text-slate-400 font-light leading-relaxed mb-6">
@@ -152,7 +152,9 @@ const IAEmpresas: React.FC = () => {
                   { n: '04', title: 'Validación y puesta en marcha', desc: 'Probamos con casos reales antes de desplegar. Ajustamos hasta que el comportamiento es el correcto.' },
                 ].map((step) => (
                   <div key={step.n} className="flex gap-6 items-start">
-                    <span className="text-[10px] font-mono text-cyber-purple tracking-widest pt-1 w-8 shrink-0">{step.n}</span>
+                    <div className="w-8 h-8 rounded-full border border-cyber-purple/40 bg-cyber-purple/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <span className="text-[9px] font-mono text-cyber-purple tracking-widest">{step.n}</span>
+                    </div>
                     <div>
                       <h3 className="text-base font-bold uppercase tracking-wider mb-2">{step.title}</h3>
                       <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
@@ -165,10 +167,10 @@ const IAEmpresas: React.FC = () => {
         </section>
 
         {/* For whom */}
-        <section className="py-24 px-6 bg-black/30">
+        <section className="py-32 px-6 bg-black/30">
           <div className="max-w-7xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-cyber-purple mb-4">Para quién tiene sentido</p>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-12 leading-tight max-w-2xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter uppercase mb-12 leading-tight max-w-2xl">
               La IA aplicada es útil cuando...
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -180,7 +182,7 @@ const IAEmpresas: React.FC = () => {
                 'Quieres usar IA en tu negocio pero no sabes por dónde empezar ni qué tiene sentido aplicar.',
                 'Has probado herramientas genéricas de IA y ninguna se adapta bien a tu contexto concreto.',
               ].map((text, i) => (
-                <div key={i} className="glass-card p-6 rounded-2xl flex items-start gap-4 border-white/5">
+                <div key={i} className="glass-card p-6 rounded-2xl flex items-start gap-4 border-white/10 hover:bg-white/5 transition-all">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyber-purple mt-2 shrink-0" />
                   <p className="text-sm text-slate-300 leading-relaxed">{text}</p>
                 </div>
@@ -195,7 +197,7 @@ const IAEmpresas: React.FC = () => {
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-8">Explora también</p>
             <div className="grid sm:grid-cols-3 gap-4">
               {RELATED.map((page) => (
-                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 transition-all border-white/5">
+                <a key={page.href} href={page.href} className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 hover:bg-white/5 transition-all border-white/10">
                   <span className="text-sm font-bold uppercase tracking-wider">{page.title}</span>
                   <ArrowRight className="w-4 h-4 text-cyber-purple group-hover:translate-x-1 transition-transform shrink-0" />
                 </a>
@@ -207,7 +209,7 @@ const IAEmpresas: React.FC = () => {
         {/* CTA */}
         <section className="py-32 px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-6xl font-black tracking-wider uppercase mb-8 leading-tight">
+            <h2 className="text-4xl lg:text-6xl font-black tracking-tighter uppercase mb-8 leading-tight">
               Sin hype.<br />
               <span className="text-cyber-purple italic">Solo lo que funciona en tu negocio.</span>
             </h2>
