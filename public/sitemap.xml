@@ -7,6 +7,42 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://kairas.es/automatizacion-procesos-empresas/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kairas.es/ia-empresas/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kairas.es/optimizacion-operativa-pymes/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kairas.es/automatizacion-whatsapp-empresas/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kairas.es/automatizacion-seguimiento-clientes/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kairas.es/automatizacion-ia-empresas-galicia/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kairas.es/privacidad.html</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>yearly</changefreq>
@@ -22,6 +58,6 @@
     <loc>https://kairas.es/cookies.html</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

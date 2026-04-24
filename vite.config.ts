@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: '/',
+    appType: 'mpa',
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -22,6 +23,19 @@ export default defineConfig(({ mode }) => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+      },
+    },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          automatizacionProcesos: path.resolve(__dirname, 'automatizacion-procesos-empresas/index.html'),
+          iaEmpresas: path.resolve(__dirname, 'ia-empresas/index.html'),
+          optimizacionOperativa: path.resolve(__dirname, 'optimizacion-operativa-pymes/index.html'),
+          automatizacionWhatsApp: path.resolve(__dirname, 'automatizacion-whatsapp-empresas/index.html'),
+          automatizacionSeguimiento: path.resolve(__dirname, 'automatizacion-seguimiento-clientes/index.html'),
+          galicia: path.resolve(__dirname, 'automatizacion-ia-empresas-galicia/index.html'),
+        },
       },
     },
   };

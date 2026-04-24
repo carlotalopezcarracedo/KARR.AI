@@ -7,6 +7,7 @@ import Manifesto from './components/Manifesto';
 import Automations from './components/Automations';
 import Integrations from './components/Integrations';
 import Services from './components/Services';
+import Soluciones from './components/Soluciones';
 import Process from './components/Process';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -60,6 +61,7 @@ const App: React.FC = () => {
         <Automations />
         <Integrations />
         <Services />
+        <Soluciones />
         <Process />
         <About />
         <Contact />
