@@ -203,7 +203,6 @@ const AutomatizacionWhatsApp: React.FC = () => {
               <span className="text-cyber-purple italic">Sin vivir pendiente del móvil.</span>
             </h2>
             <p className="text-lg text-slate-400 font-light mb-12 max-w-xl mx-auto">
-              Cuéntame cómo gestionas WhatsApp hoy y te digo qué parte puede funcionar sola sin perder la calidad del trato.
             </p>
             <a href="/#contacto" className="inline-flex items-center justify-center gap-3 bg-white text-black px-12 py-6 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all">
               Solicitar diagnóstico gratuito
