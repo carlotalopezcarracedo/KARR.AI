@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20">
           <div className="space-y-6">
             <img
-              src={`${import.meta.env.BASE_URL}logos KAIRAS_ISOLOGO HORIZONTAL BLANCO.png`}
+              src={`${import.meta.env.BASE_URL}logo-kairas-horizontal-blanco.webp`}
               alt="KAIRAS"
               className="h-10 w-auto"
               loading="lazy"
