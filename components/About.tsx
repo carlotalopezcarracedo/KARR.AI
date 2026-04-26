@@ -11,7 +11,7 @@ const About: React.FC = () => {
               <img
                 alt="Carlota López Carracedo, especialista en automatización e IA para pymes"
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                src={`${import.meta.env.BASE_URL}carlota-kairas-automatizacion-ia.png`}
+                src={`${import.meta.env.BASE_URL}og-kairas.webp`}
                 loading="lazy"
                 decoding="async"
                 width="600"
