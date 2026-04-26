@@ -40,7 +40,7 @@ const Integrations: React.FC = () => {
           {/* Central Logo (Static) */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-3xl flex items-center justify-center z-20 shadow-[0_0_50px_rgba(139,92,246,0.3)] border border-white/20 bg-gradient-to-b from-white/[0.03] to-white/[0.01] backdrop-blur-xl">
             <img
-              src={`${import.meta.env.BASE_URL}LOGO_FAVICON BLANCO.png`}
+              src={`${import.meta.env.BASE_URL}LOGO_FAVICON_BLANCO.png`}
               alt="KAIRAS"
               className="w-20 h-20 object-contain"
               loading="lazy"
