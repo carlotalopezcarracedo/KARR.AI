@@ -1,49 +1,39 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import '../index.css';
-import AutomatizacionProcesos from './AutomatizacionProcesos';
-import IAEmpresas from './IAEmpresas';
-import OptimizacionOperativa from './OptimizacionOperativa';
-import AutomatizacionWhatsApp from './AutomatizacionWhatsApp';
-import AutomatizacionSeguimiento from './AutomatizacionSeguimiento';
-import Galicia from './Galicia';
-import Blog from './Blog';
-import BlogPost1 from './BlogPost1';
-import BlogPostPierdenClientes from './BlogPostPierdenClientes';
-import BlogPostWhatsAppManual from './BlogPostWhatsAppManual';
-import BlogPostProcesoPrimero from './BlogPostProcesoPrimero';
-import BlogPostAusenciasClinicas from './BlogPostAusenciasClinicas';
-import Servicios from './Servicios';
-import ContactoPage from './ContactoPage';
-import CRMPymesSeguimientoClientes from './CRMPymesSeguimientoClientes';
-import AutomatizacionClinicas from './AutomatizacionClinicas';
 
-const pageMap: Record<string, React.FC> = {
-  servicios: Servicios,
-  contacto: ContactoPage,
-  'automatizacion-procesos': AutomatizacionProcesos,
-  'ia-empresas': IAEmpresas,
-  'optimizacion-operativa-pymes': OptimizacionOperativa,
-  'automatizacion-whatsapp-empresas': AutomatizacionWhatsApp,
-  'automatizacion-seguimiento-clientes': AutomatizacionSeguimiento,
-  'crm-pymes-seguimiento-clientes': CRMPymesSeguimientoClientes,
-  'automatizacion-clinicas': AutomatizacionClinicas,
-  'automatizacion-empresas-galicia': Galicia,
-  'blog': Blog,
-  'blog-post-1': BlogPost1,
-  'blog-pierden-clientes': BlogPostPierdenClientes,
-  'blog-whatsapp-manual': BlogPostWhatsAppManual,
-  'blog-proceso-primero': BlogPostProcesoPrimero,
-  'blog-ausencias-clinicas': BlogPostAusenciasClinicas,
+type PageModule = { default: React.FC };
+type PageLoader = () => Promise<PageModule>;
+
+const pageMap: Record<string, PageLoader> = {
+  servicios: () => import('./Servicios'),
+  contacto: () => import('./ContactoPage'),
+  'automatizacion-procesos': () => import('./AutomatizacionProcesos'),
+  'ia-empresas': () => import('./IAEmpresas'),
+  'optimizacion-operativa-pymes': () => import('./OptimizacionOperativa'),
+  'automatizacion-whatsapp-empresas': () => import('./AutomatizacionWhatsApp'),
+  'automatizacion-seguimiento-clientes': () => import('./AutomatizacionSeguimiento'),
+  'crm-pymes-seguimiento-clientes': () => import('./CRMPymesSeguimientoClientes'),
+  'automatizacion-clinicas': () => import('./AutomatizacionClinicas'),
+  'automatizacion-empresas-galicia': () => import('./Galicia'),
+  'blog': () => import('./Blog'),
+  'blog-post-1': () => import('./BlogPost1'),
+  'blog-pierden-clientes': () => import('./BlogPostPierdenClientes'),
+  'blog-whatsapp-manual': () => import('./BlogPostWhatsAppManual'),
+  'blog-proceso-primero': () => import('./BlogPostProcesoPrimero'),
+  'blog-ausencias-clinicas': () => import('./BlogPostAusenciasClinicas'),
 };
 
 const rootEl = document.getElementById('root')!;
 const pageName = rootEl.dataset.page ?? '';
-const Page = pageMap[pageName] ?? null;
+const loadPage = pageMap[pageName];
+const LazyPage = loadPage ? React.lazy(loadPage) : null;
 
 const root = ReactDOM.createRoot(rootEl);
 root.render(
   <React.StrictMode>
-    {Page ? <Page /> : null}
+    <Suspense fallback={null}>
+      {LazyPage ? <LazyPage /> : null}
+    </Suspense>
   </React.StrictMode>
 );
