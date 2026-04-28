@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 const CONTACT_EMAIL = 'carlota.kairas@gmail.com';
+const CONTACT_PHONE_DISPLAY = '622262076';
+const CONTACT_PHONE_HREF = '+34622262076';
 const FORM_ENDPOINT = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 const N8N_WEBHOOK_URL =
   import.meta.env.VITE_N8N_WEBHOOK_URL ?? 'https://pruebas-n8n.uhqude.easypanel.host/webhook/kairas-leads';
@@ -116,6 +118,15 @@ const Contact: React.FC<ContactProps> = ({ headingLevel = 2, sectionId = 'contac
                   <Mail className="text-cyber-purple w-5 h-5" />
                 </span>
                 <span className="font-bold">{CONTACT_EMAIL}</span>
+              </a>
+              <a
+                href={`tel:${CONTACT_PHONE_HREF}`}
+                className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-pointer group"
+              >
+                <span className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-cyber-purple/20 transition-all">
+                  <Phone className="text-cyber-purple w-5 h-5" />
+                </span>
+                <span className="font-bold">{CONTACT_PHONE_DISPLAY}</span>
               </a>
               <div className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-pointer group">
                 <span className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-cyber-purple/20 transition-all">

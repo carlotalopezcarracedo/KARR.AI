@@ -22,6 +22,11 @@ const services = [
     href: '/automatizacion-whatsapp-empresas/',
   },
   {
+    title: 'Automatizacion del seguimiento de clientes',
+    desc: 'Recordatorios, reactivacion y siguiente paso automatico para no perder oportunidades.',
+    href: '/automatizacion-seguimiento-clientes/',
+  },
+  {
     title: 'CRM y seguimiento de clientes',
     desc: 'Secuencias de seguimiento, reactivacion y visibilidad del pipeline para no perder oportunidades.',
     href: '/crm-pymes-seguimiento-clientes/',
