@@ -8,7 +8,12 @@ const N8N_WEBHOOK_URL =
 
 type SubmitStatus = 'idle' | 'sending' | 'success' | 'error';
 
-const Contact: React.FC = () => {
+type ContactProps = {
+  headingLevel?: 1 | 2;
+  sectionId?: string;
+};
+
+const Contact: React.FC<ContactProps> = ({ headingLevel = 2, sectionId = 'contacto' }) => {
   const [fullName, setFullName] = useState('');
   const [businessEmail, setBusinessEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -16,6 +21,8 @@ const Contact: React.FC = () => {
   const [message, setMessage] = useState('');
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>('idle');
   const [statusMessage, setStatusMessage] = useState('');
+
+  const HeadingTag = headingLevel === 1 ? 'h1' : 'h2';
 
   const buildMailtoUrl = () => {
     const subject = `Solicitud de diagnóstico - ${businessName.trim() || fullName.trim() || 'Nuevo contacto'}`;
@@ -25,7 +32,7 @@ const Contact: React.FC = () => {
       `Telefono: ${phoneNumber.trim() || '-'}`,
       `Empresa / Proyecto: ${businessName.trim() || '-'}`,
       '',
-      '¿Dónde pierdes más tiempo hoy?',
+      '¿Dónde se atasca tu negocio?',
       message.trim() || '-',
     ].join('\n');
 
@@ -88,19 +95,23 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contacto" className="py-32 px-6 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-cyber-purple/10 blur-[150px] -z-10 rounded-full animate-blob"></div>
+    <section id={sectionId} className="py-32 px-6 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-cyber-purple/10 blur-[150px] -z-10 rounded-full animate-blob" />
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-24">
           <div>
-            <h2 className="reveal text-5xl lg:text-8xl font-black tracking-tighter leading-none uppercase mb-12">
-              El sistema <span className="text-cyber-purple">perfecto</span> es el que funciona <span className="italic opacity-50">cuando tú no estás.</span>
-            </h2>
+            <HeadingTag className="reveal text-5xl lg:text-7xl font-black tracking-tighter leading-none uppercase mb-10">
+              Cuéntame dónde se atasca tu negocio
+            </HeadingTag>
             <p className="reveal stagger-1 text-xl text-slate-400 font-light mb-12 max-w-lg">
-              Cuéntame dónde están tus cuellos de botella operativos y te digo qué automatización haría primero para recuperar tiempo sin complicarte la vida.
+              Cuéntanos cómo funciona tu negocio y analizamos dónde puedes recuperar tiempo.
+              Revisamos tu caso y te respondemos con el siguiente paso.
             </p>
             <div className="reveal stagger-2 space-y-4">
-              <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-pointer group">
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="flex items-center gap-4 text-slate-300 hover:text-white transition-colors cursor-pointer group"
+              >
                 <span className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-cyber-purple/20 transition-all">
                   <Mail className="text-cyber-purple w-5 h-5" />
                 </span>
@@ -114,13 +125,19 @@ const Contact: React.FC = () => {
               </div>
             </div>
           </div>
+
           <div className="relative reveal-scale stagger-2">
             <div className="glass-card p-12 rounded-[3rem] border-white/20 hover:border-white/30 transition-all">
               <form className="space-y-8" onSubmit={handleSubmit} noValidate>
                 <input type="hidden" name="_webhook" value={N8N_WEBHOOK_URL} />
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-2 group">
-                    <label htmlFor="contact-name" className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors">Nombre Completo</label>
+                    <label
+                      htmlFor="contact-name"
+                      className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors"
+                    >
+                      Nombre completo
+                    </label>
                     <input
                       id="contact-name"
                       name="nombre_completo"
@@ -133,7 +150,12 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div className="space-y-2 group">
-                    <label htmlFor="contact-email" className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors">Email Profesional</label>
+                    <label
+                      htmlFor="contact-email"
+                      className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors"
+                    >
+                      Email profesional
+                    </label>
                     <input
                       id="contact-email"
                       name="email_profesional"
@@ -147,9 +169,15 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 </div>
+
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-2 group">
-                    <label htmlFor="contact-company" className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors">Empresa / Proyecto</label>
+                    <label
+                      htmlFor="contact-company"
+                      className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors"
+                    >
+                      Empresa / proyecto
+                    </label>
                     <input
                       id="contact-company"
                       name="empresa_proyecto"
@@ -162,7 +190,12 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div className="space-y-2 group">
-                    <label htmlFor="contact-phone" className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors">Teléfono</label>
+                    <label
+                      htmlFor="contact-phone"
+                      className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors"
+                    >
+                      Telefono
+                    </label>
                     <input
                       id="contact-phone"
                       name="telefono"
@@ -176,18 +209,25 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 </div>
+
                 <div className="space-y-2 group">
-                  <label htmlFor="contact-message" className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors">¿Dónde pierdes más tiempo hoy?</label>
+                  <label
+                    htmlFor="contact-message"
+                    className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500 ml-1 group-focus-within:text-cyber-purple transition-colors"
+                  >
+                    Cuentame que parte de tu negocio se esta atascando
+                  </label>
                   <textarea
                     id="contact-message"
                     name="mensaje"
                     className="w-full bg-white/5 border-white/10 rounded-2xl px-6 py-4 text-white focus:border-cyber-purple focus:ring-0 focus:bg-white/10 outline-none transition-all resize-none placeholder:text-white/20"
-                    placeholder="Ej: Clasificación de leads, agenda, facturación..."
+                    placeholder="Ej: leads, agenda, seguimiento, presupuestos, coordinacion interna..."
                     rows={4}
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                  ></textarea>
+                  />
                 </div>
+
                 <button
                   type="submit"
                   disabled={submitStatus === 'sending'}
@@ -195,6 +235,7 @@ const Contact: React.FC = () => {
                 >
                   {submitStatus === 'sending' ? 'Enviando...' : 'Enviar y revisar mi caso'}
                 </button>
+
                 {statusMessage && (
                   <p className={`text-sm font-medium ${submitStatus === 'success' ? 'text-green-400' : 'text-amber-300'}`}>
                     {statusMessage}

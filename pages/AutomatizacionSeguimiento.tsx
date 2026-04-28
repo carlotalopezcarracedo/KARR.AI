@@ -7,7 +7,7 @@ const CONTACT_EMAIL = 'carlota.kairas@gmail.com';
 
 const RELATED = [
   { title: 'Automatización de WhatsApp', href: '/automatizacion-whatsapp-empresas/' },
-  { title: 'Automatización de procesos', href: '/automatizacion-procesos-empresas/' },
+  { title: 'Automatización de procesos', href: '/automatizacion-procesos/' },
   { title: 'IA para empresas', href: '/ia-empresas/' },
 ];
 
@@ -36,7 +36,7 @@ const AutomatizacionSeguimiento: React.FC = () => {
               La mayoría de clientes se pierden porque nadie hizo seguimiento a tiempo. Un mensaje, un recordatorio, una propuesta actualizada... Cosas que se olvidan cuando hay volumen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/#contacto" className="inline-flex items-center justify-center bg-white text-black px-10 py-5 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 transition-all">
+              <a href="/contacto/" className="inline-flex items-center justify-center bg-white text-black px-10 py-5 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 transition-all">
                 Solicitar diagnóstico
               </a>
               <a href="/" className="glass-card inline-flex items-center justify-center gap-2 px-10 py-5 rounded-xl font-black text-sm tracking-widest uppercase border-white/10 hover:border-cyber-purple/50 transition-all hover:bg-white/5">
@@ -194,7 +194,7 @@ const AutomatizacionSeguimiento: React.FC = () => {
             </h2>
             <p className="text-lg text-slate-400 font-light mb-12 max-w-xl mx-auto">
             </p>
-            <a href="/#contacto" className="inline-flex items-center justify-center gap-3 bg-white text-black px-12 py-6 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all">
+            <a href="/contacto/" className="inline-flex items-center justify-center gap-3 bg-white text-black px-12 py-6 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all">
               Solicitar diagnóstico gratuito
               <ArrowRight className="w-5 h-5" />
             </a>

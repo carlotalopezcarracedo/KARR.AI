@@ -139,7 +139,7 @@ const BlogPost1: React.FC = () => {
             <div className="mt-16 pt-12 border-t border-white/10">
               <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6">¿Quieres saber cuál tiene más impacto en tu negocio?</p>
               <a
-                href="/#contacto"
+                href="/contacto/"
                 className="inline-flex items-center justify-center gap-3 bg-white text-black px-10 py-5 rounded-xl font-black text-sm tracking-widest uppercase hover:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all"
               >
                 Solicitar diagnóstico gratuito
@@ -154,7 +154,7 @@ const BlogPost1: React.FC = () => {
           <div className="max-w-2xl mx-auto">
             <p className="text-xs font-bold tracking-[0.4em] uppercase text-slate-500 mb-6">Más recursos</p>
             <div className="grid sm:grid-cols-2 gap-4">
-              <a href="/automatizacion-procesos-empresas/" className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 hover:bg-white/5 transition-all border-white/10">
+              <a href="/automatizacion-procesos/" className="glass-card p-6 rounded-2xl flex items-center justify-between group hover:border-cyber-purple/30 hover:bg-white/5 transition-all border-white/10">
                 <span className="text-sm font-bold uppercase tracking-wider">Automatización de procesos</span>
                 <ArrowRight className="w-4 h-4 text-cyber-purple group-hover:translate-x-1 transition-transform shrink-0" />
               </a>

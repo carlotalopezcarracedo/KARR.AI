@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="reveal stagger-3 text-lg md:text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed mb-12">
-          Procesos más claros para empresas que ya no quieren operar a mano. Ayudamos a pymes de servicios a recuperar tiempo, reducir tareas manuales y operar con sistema.
+          Procesos más claros para empresas que ya no quieren operar a mano.
         </p>
 
         <div className="reveal stagger-4 flex flex-wrap justify-center gap-4 max-w-4xl mx-auto mb-16">
@@ -55,8 +55,8 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="reveal stagger-5 flex flex-col sm:flex-row gap-6 justify-center">
-          <a href="#contacto" className="relative overflow-hidden bg-white text-black px-12 py-5 rounded-xl font-black text-sm tracking-widest uppercase hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)] group inline-flex items-center justify-center">
-            <span className="relative z-10">Analizar mi negocio</span>
+          <a href="/contacto/" className="relative overflow-hidden bg-white text-black px-12 py-5 rounded-xl font-black text-sm tracking-widest uppercase hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)] group inline-flex items-center justify-center">
+            <span className="relative z-10">Cuéntame qué parte de tu negocio se está atascando</span>
             <div className="absolute inset-0 h-full w-full scale-0 rounded-xl transition-all duration-300 group-hover:scale-100 group-hover:bg-slate-200"></div>
           </a>
           <a href="#automatizaciones" className="glass-card px-12 py-5 rounded-xl font-black text-sm tracking-widest uppercase text-white border-white/10 hover:border-cyber-purple transition-all hover:bg-white/5 inline-flex items-center justify-center">

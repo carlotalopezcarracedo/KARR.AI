@@ -9,12 +9,16 @@ const EXCLUDED_DIRS = new Set(['.git', '.claude', 'node_modules', 'dist']);
 
 const PRIORITY_MAP = {
   '/': { changefreq: 'weekly', priority: '1.0' },
+  '/servicios/': { changefreq: 'monthly', priority: '0.9' },
+  '/contacto/': { changefreq: 'monthly', priority: '0.8' },
   '/automatizacion-procesos/': { changefreq: 'monthly', priority: '0.9' },
+  '/automatizacion-empresas-galicia/': { changefreq: 'monthly', priority: '0.8' },
   '/ia-empresas/': { changefreq: 'monthly', priority: '0.8' },
   '/optimizacion-operativa-pymes/': { changefreq: 'monthly', priority: '0.8' },
   '/automatizacion-whatsapp-empresas/': { changefreq: 'monthly', priority: '0.8' },
   '/automatizacion-seguimiento-clientes/': { changefreq: 'monthly', priority: '0.8' },
-  '/automatizacion-ia-empresas-galicia/': { changefreq: 'monthly', priority: '0.8' },
+  '/crm-pymes-seguimiento-clientes/': { changefreq: 'monthly', priority: '0.7' },
+  '/automatizacion-clinicas/': { changefreq: 'monthly', priority: '0.7' },
   '/blog/': { changefreq: 'monthly', priority: '0.7' },
   '/blog/automatizaciones-que-recuperan-tiempo-pymes/': { changefreq: 'monthly', priority: '0.6' },
   '/accesibilidad/': { changefreq: 'yearly', priority: '0.3' },
