@@ -1,4 +1,25 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/:path*.(png|jpg|jpeg|gif|webp|svg|ico|avif)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    }
+  ],
   "redirects": [
     {
       "source": "/automatizacion-seguimiento-clientes",
