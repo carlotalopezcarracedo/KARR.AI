@@ -96,7 +96,7 @@ const BlogPostWhatsAppAppVsAPI: React.FC = () => {
               </ul>
 
               <p>
-                La diferencia clave respecto a la app: la API permite que WhatsApp deje de ser un canal manual y se convierta en parte de la operativa real del negocio.
+                La diferencia clave respecto a la app: la API permite que WhatsApp deje de ser un canal manual y se convierta en parte de la operativa real del negocio. Es lo que está detrás de la <a href="/automatizacion-whatsapp-empresas/" className="text-cyber-purple underline decoration-cyber-purple/50">automatización de WhatsApp para empresas</a>.
               </p>
 
               <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white pt-4">
@@ -145,7 +145,7 @@ const BlogPostWhatsAppAppVsAPI: React.FC = () => {
               <ul className="space-y-2 pl-4 border-l border-cyber-purple/30">
                 <li>Más de una persona necesita atender WhatsApp a la vez</li>
                 <li>Quieres automatizar respuestas, seguimientos o notificaciones de forma real</li>
-                <li>Necesitas integrar WhatsApp con tu CRM o herramienta de gestión</li>
+                <li>Necesitas integrar WhatsApp con tu <a href="/crm-pymes-seguimiento-clientes/" className="text-cyber-purple underline decoration-cyber-purple/50">CRM o herramienta de gestión</a></li>
                 <li>El volumen de mensajes supera lo que una persona puede gestionar con calidad</li>
                 <li>Quieres enviar recordatorios o notificaciones automáticas a clientes de forma trazable</li>
               </ul>
@@ -168,7 +168,7 @@ const BlogPostWhatsAppAppVsAPI: React.FC = () => {
               </ul>
 
               <p>
-                El coste depende del volumen de mensajes y del proveedor. Para pymes de servicios con uso moderado, los costes mensuales son asumibles si el sistema aporta valor real. El error es implementar la API sin tener claro qué problema concreto resuelve.
+                El coste depende del volumen de mensajes y del proveedor. Para pymes de servicios con uso moderado, los costes mensuales son asumibles si el sistema aporta valor real. El error es implementar la API sin tener claro qué problema concreto resuelve. Si todavía gestionas el canal a mano, lee antes sobre <a href="/blog/dejar-de-gestionar-whatsapp-empresa-a-mano/" className="text-cyber-purple underline decoration-cyber-purple/50">cuándo tiene sentido dejar de hacerlo</a>.
               </p>
 
             </div>

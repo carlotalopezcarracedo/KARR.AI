@@ -115,7 +115,7 @@ const BlogPostSeguimientoLeads: React.FC = () => {
               </p>
 
               <p>
-                Este tipo de cierre deja una impresión positiva. Y los leads que paran no están muertos: están fríos. Pueden volver en meses.
+                Este tipo de cierre deja una impresión positiva. Y los leads que paran no están muertos: están <a href="/blog/reactivar-leads-frios-sin-perseguir/" className="text-cyber-purple underline decoration-cyber-purple/50">fríos, y pueden volver en meses</a>.
               </p>
 
               <h2 className="text-xl sm:text-2xl font-black uppercase tracking-tighter text-white pt-4">
@@ -135,11 +135,11 @@ const BlogPostSeguimientoLeads: React.FC = () => {
               </ul>
 
               <p>
-                Esto puede hacerse con un CRM básico, con una hoja de cálculo bien estructurada o con una herramienta de automatización. Lo que no funciona es tenerlo en la memoria o en notas dispersas.
+                Esto puede hacerse con un <a href="/crm-pymes-seguimiento-clientes/" className="text-cyber-purple underline decoration-cyber-purple/50">CRM básico</a>, con una hoja de cálculo bien estructurada o con una herramienta de automatización. Lo que no funciona es tenerlo en la memoria o en notas dispersas.
               </p>
 
               <p>
-                Con el sistema correcto, el seguimiento deja de depender de la energía y la memoria de una persona. Se vuelve predecible, consistente y, en muchos casos, automático.
+                Con el sistema correcto, el seguimiento deja de depender de la energía y la memoria de una persona. Se vuelve predecible, consistente y, en muchos casos, <a href="/automatizacion-procesos/" className="text-cyber-purple underline decoration-cyber-purple/50">automático</a>.
               </p>
 
             </div>

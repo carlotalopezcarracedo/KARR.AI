@@ -77,7 +77,7 @@ const BlogPostTareasManuales: React.FC = () => {
               </h3>
 
               <p>
-                El WhatsApp del negocio recibe las mismas preguntas una y otra vez. Horario, precio, disponibilidad, cómo funciona el servicio, qué necesitan traer. Cada respuesta individual parece pequeña. En conjunto, representan una parte significativa del tiempo de quien atiende el canal. Y esa persona podría estar haciendo otra cosa.
+                El WhatsApp del negocio recibe las mismas preguntas una y otra vez. Horario, precio, disponibilidad, cómo funciona el servicio, qué necesitan traer. Cada respuesta individual parece pequeña. En conjunto, representan una parte significativa del tiempo de quien atiende el canal. La <a href="/automatizacion-whatsapp-empresas/" className="text-cyber-purple underline decoration-cyber-purple/50">automatización de WhatsApp para empresas</a> resuelve este tramo sin que nadie tenga que estar pendiente del teléfono.
               </p>
 
               <h3 className="text-base font-black uppercase tracking-wider text-white/80 pt-2">
@@ -85,7 +85,7 @@ const BlogPostTareasManuales: React.FC = () => {
               </h3>
 
               <p>
-                Un cliente potencial contacta, pide información, dice que lo piensa y desaparece. Tres semanas después ya nadie recuerda que existe. No hay recordatorio, no hay secuencia, no hay criterio sobre cuándo volver a escribir. El resultado es predecible: la oportunidad se pierde sin que nadie haya tomado la decisión de descartarla.
+                Un cliente potencial contacta, pide información, dice que lo piensa y desaparece. Tres semanas después ya nadie recuerda que existe. No hay recordatorio, no hay secuencia, no hay un <a href="/crm-pymes-seguimiento-clientes/" className="text-cyber-purple underline decoration-cyber-purple/50">sistema de seguimiento</a>. El resultado es predecible: la oportunidad se pierde sin que nadie haya tomado la decisión de descartarla.
               </p>
 
               <h3 className="text-base font-black uppercase tracking-wider text-white/80 pt-2">
@@ -129,7 +129,7 @@ const BlogPostTareasManuales: React.FC = () => {
               </h2>
 
               <p>
-                No se trata de automatizarlo todo de golpe. Se trata de identificar cuál de estas tareas tiene más impacto si se resuelve primero.
+                No se trata de automatizarlo todo de golpe. Se trata de identificar <a href="/blog/como-saber-que-proceso-automatizar-primero/" className="text-cyber-purple underline decoration-cyber-purple/50">cuál de estas tareas tiene más impacto si se resuelve primero</a>.
               </p>
 
               <p>

@@ -138,19 +138,19 @@ const BlogPostReactivarLeads: React.FC = () => {
               </p>
 
               <p>
-                Eso requiere un proceso: que cada lead tenga asignado un próximo paso, una fecha y alguien responsable de ejecutarlo. Sin este sistema, los leads que no convierten de inmediato siempre acabarán cayendo en el olvido.
+                Eso requiere un proceso: que cada lead tenga asignado un próximo paso, una fecha y alguien responsable de ejecutarlo. Un buen <a href="/crm-pymes-seguimiento-clientes/" className="text-cyber-purple underline decoration-cyber-purple/50">CRM con seguimiento automatizado</a> hace que ese sistema no dependa de que alguien se acuerde. Sin él, los leads que no convierten de inmediato siempre acabarán cayendo en el olvido.
               </p>
 
               <p>Lo mínimo que funciona:</p>
 
               <ul className="space-y-2 pl-4 border-l border-cyber-purple/30">
                 <li>Un registro centralizado de todos los leads con su estado y el próximo contacto previsto</li>
-                <li>Recordatorios automáticos para que nadie tenga que acordarse de cuándo escribir</li>
+                <li><a href="/automatizacion-procesos/" className="text-cyber-purple underline decoration-cyber-purple/50">Recordatorios automáticos</a> para que nadie tenga que acordarse de cuándo escribir</li>
                 <li>Un criterio claro sobre cuándo cambiar el estado de un lead de activo a frío a descartado</li>
               </ul>
 
               <p>
-                Con esto en su sitio, los leads que hoy están fríos son, en muchos casos, clientes que todavía no han llegado.
+                Con esto en su sitio, los leads que hoy están fríos son, en muchos casos, clientes que todavía no han llegado. Para saber cuándo y cómo contactarlos en cada fase, lee también sobre <a href="/blog/seguimiento-leads-pymes-cuando-insistir/" className="text-cyber-purple underline decoration-cyber-purple/50">seguimiento de leads en pymes</a>.
               </p>
 
             </div>
