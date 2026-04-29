@@ -22,7 +22,7 @@ const PRIORITY_MAP = {
   '/automatizacion-whatsapp-empresas/': { changefreq: 'monthly', priority: '0.8' },
   '/crm-pymes-seguimiento-clientes/': { changefreq: 'monthly', priority: '0.8' },
   '/automatizacion-clinicas/': { changefreq: 'monthly', priority: '0.7' },
-  '/blog/': { changefreq: 'monthly', priority: '0.7' },
+  '/blog/': { changefreq: 'weekly', priority: '0.7' },
   '/blog/automatizaciones-que-recuperan-tiempo-pymes/': { changefreq: 'monthly', priority: '0.6' },
   '/blog/por-que-las-pymes-pierden-clientes-antes-de-firmar/': { changefreq: 'monthly', priority: '0.6' },
   '/blog/dejar-de-gestionar-whatsapp-empresa-a-mano/': { changefreq: 'monthly', priority: '0.6' },
